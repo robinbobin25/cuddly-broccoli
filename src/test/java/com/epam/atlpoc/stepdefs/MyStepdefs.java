@@ -9,20 +9,20 @@ import cucumber.api.java.en.When;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
-public class MyStepdefs extends BaseStepDefs {
+public class MyStepDefs extends BaseStepDefs {
 
     HomePage homePage;
 
     @BeforeClass
-    public void lol() {
-        System.out.println("LLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL");
+    public void beforeClassMethod() {
+        System.out.println("Before class was triggered");
     }
 
     @Before
     public void setUp() {
         homePage = new HomePage(getDriver());
+        System.out.println("Before was triggered and HomePage initialized");
     }
-
 
     @Then("^I should see page url \"([^\"]*)\"$")
     public void I_should_see_page_url(String arg1) throws Throwable {
