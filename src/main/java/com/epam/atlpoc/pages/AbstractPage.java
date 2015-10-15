@@ -6,8 +6,4 @@ public class AbstractPage extends AbstractWebEntity {
     public AbstractPage(WebDriver driver) {
         super(driver);
     }
-
-    public void vek(){
-        $("//somexpath").click();
-    }
 }
