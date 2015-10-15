@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
-public class MyStepDefs extends BaseStepDefs {
+public class MyStepdefs extends BaseStepDefs {
 
     HomePage homePage;
 
