@@ -51,6 +51,7 @@ buildNumber.properties
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
 
+/pom.xml
 ## File-based project format:
 *.ipr
 *.iws

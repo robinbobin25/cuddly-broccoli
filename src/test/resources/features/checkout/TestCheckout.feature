@@ -1,16 +1,16 @@
-Feature Test Atlas Copco Checkout End-to-End Test
+Feature: 1 'Test Atlas Copco Checkout End-to-End'
 
-  @Andrey
+  @Done
   Scenario: The user can log in
-    Given the user is on the Homepage
-    When the user clicks on the Login button
+    Given user is on the Homepage
+    When user clicks on the Login button
     Then Login overlay is displayed
     And Username and Password fields are available
-    When the user enters his valid credentials
+    When user enters his valid credentials
     Then Homepage is displayed with signed-in name
 
-  @Andrey
-  Scenario: The user wants to sign in
-    Given the user is on Homepage
-    When the user clicks on the Login button
-    Then Login overlay is displayed
+  @Done
+  Scenario: The user wants to buy a product
+    Given the signed-in user is on Homepage
+    When user clicks on the Browse Catalog button
+    Then system navigates to Catalog Page
