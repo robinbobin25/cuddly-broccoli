@@ -52,6 +52,7 @@ buildNumber.properties
 # .idea/mongoSettings.xml
 
 /pom.xml
+/logging
 ## File-based project format:
 *.ipr
 *.iws
