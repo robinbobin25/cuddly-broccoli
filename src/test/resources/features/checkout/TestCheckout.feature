@@ -1,4 +1,5 @@
-Feature Test Atlas Copco Checkout End-to-End Test
+@Suite
+Feature: Test Atlas Copco Checkout End-to-End Test
 
   @Andrey
   Scenario: The user can log in

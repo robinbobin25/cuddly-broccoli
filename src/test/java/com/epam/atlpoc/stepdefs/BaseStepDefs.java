@@ -5,7 +5,11 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseStepDefs {
 
-    private static WebDriver DRIVER = DriverFactory.createInstance();
+    private static WebDriver DRIVER;
+
+    public static void setDriver() {
+        BaseStepDefs.DRIVER = DriverFactory.createInstance();
+    }
 
 //    public void setUp() {
 //        System.out.println("SETUP");

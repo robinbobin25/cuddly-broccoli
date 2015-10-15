@@ -1,3 +1,4 @@
+@Suite
 Feature: PC Featureaf
 
   @Done
