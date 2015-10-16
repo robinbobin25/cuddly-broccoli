@@ -1,7 +1,7 @@
 @Suite
 Feature: PC Featureaf
 
-  @Done
+  @Story
   Scenario: Verify that user can open PC page
     Given I open pn.com.ua
     When I select "Компьютеры"

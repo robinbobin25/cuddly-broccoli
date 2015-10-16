@@ -702,3 +702,11 @@
 2015-10-16 11:13:49 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (1563eb3f-c598-49f8-9890-3b9c49179bdc) was created
 2015-10-16 11:13:52 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
 2015-10-16 11:13:54 INFO  DriverEventHandler:20 - Navigated to https://github.com/
+2015-10-16 11:25:11 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (0fe0af3a-0c1f-4e65-a003-1a4abf1af939) was created
+2015-10-16 11:25:16 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (ac954687-0584-42fc-8159-01987d22bb36) was created
+2015-10-16 11:25:22 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (efaac33e-1be0-4b12-9f40-92f4d46c653e) was created
+2015-10-16 11:25:24 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
+2015-10-16 11:25:27 INFO  DriverEventHandler:20 - Navigated to https://github.com/
+2015-10-16 11:25:32 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (d1f31edb-feef-4c5e-90f1-e5742a1dfed2) was created
+2015-10-16 11:25:34 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
+2015-10-16 11:25:36 INFO  DriverEventHandler:20 - Navigated to https://github.com/

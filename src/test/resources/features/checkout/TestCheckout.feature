@@ -1,6 +1,7 @@
+@Suite
 Feature: 1 'Test Atlas Copco Checkout End-to-End'
 
-  @Done
+  @Story
   Scenario: The user can log in
     Given user is on the Homepage
     When user clicks on the Login button
@@ -9,7 +10,7 @@ Feature: 1 'Test Atlas Copco Checkout End-to-End'
     When user enters his valid credentials
     Then Homepage is displayed with signed-in name
 
-  @Done
+  @Story
   Scenario: The user wants to buy a product
     Given the signed-in user is on Homepage
     When user clicks on the Browse Catalog button

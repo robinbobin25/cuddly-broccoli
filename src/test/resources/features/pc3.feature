@@ -1,13 +1,13 @@
 @Suite
 Feature: PC Feature POX
 
-  @Done
+  @Story
   Scenario: Verify that user can open PC page
     Given I open pn.com.ua
     When I loh
     Then I should see page url "http://pn.com.ua/computers/"
 
-  @Done
+  @Story
   Scenario: Verify that user can open PC page
     Given I open pn.com.ua
     When I select category "Компьютеры"
