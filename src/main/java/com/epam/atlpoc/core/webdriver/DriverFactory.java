@@ -9,12 +9,14 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.epam.atlpoc.core.properties.UtilsConstants.BROWSERS_CONFIGURATION;
+
 public class DriverFactory {
 
     private static WebDriver driver;
     private static final Logger LOGGER = Logger.getLogger(WebDriver.class);
 
-    private static PropertyReader propertiesReader = new PropertyReader(UtilsConstants.BROWSERS_CONFIGURATION);
+    private static PropertyReader propertiesReader = new PropertyReader(BROWSERS_CONFIGURATION);
     private static final String BROWSER_TYPE = propertiesReader.getPropertyValue("browser.type");
 
     public static WebDriver createInstance() {
@@ -37,8 +39,8 @@ public class DriverFactory {
     }
 
     private static WebDriver optimizeDriver(WebDriver driver) {
-        driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         return driver;

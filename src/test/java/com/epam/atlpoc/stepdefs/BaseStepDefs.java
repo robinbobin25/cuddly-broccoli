@@ -11,18 +11,6 @@ public class BaseStepDefs {
         BaseStepDefs.DRIVER = DriverFactory.createInstance();
     }
 
-//    public void setUp() {
-//        System.out.println("SETUP");
-//        driver = DriverFactory.createInstance();
-//        driver.get("http://www.google.com");
-//    }
-//
-//    public void tearDown() {
-//        System.out.println("TEARDOWN");
-//        driver.close();
-//        driver.quit();
-//    }
-
     public static WebDriver getDriver() {
         return DRIVER;
     }

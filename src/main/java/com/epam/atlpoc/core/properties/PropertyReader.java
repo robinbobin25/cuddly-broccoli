@@ -38,7 +38,7 @@ public class PropertyReader {
         try {
             return properties.getProperty(propertyName);
         } catch (NoSuchElementException e) {
-            LOGGER.error("There's no such property, like " + propertyName + " in the " + propertyFilePath + "property file");
+            LOGGER.error("There's no such property, like " + propertyName + " in the " + propertyFilePath + " property file");
         }
         return null;
     }
