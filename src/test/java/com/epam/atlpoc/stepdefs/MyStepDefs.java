@@ -1,13 +1,12 @@
 package com.epam.atlpoc.stepdefs;
 
-import com.epam.atlpoc.pages.HomePage;
+import com.epam.atlpoc.pages.store.HomePage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 
 public class MyStepDefs extends BaseStepDefs {
 

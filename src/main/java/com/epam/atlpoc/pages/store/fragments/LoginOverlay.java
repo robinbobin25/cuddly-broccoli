@@ -1,4 +1,4 @@
-package com.epam.atlpoc.pages.fragments;
+package com.epam.atlpoc.pages.store.fragments;
 
 import com.epam.atlpoc.pages.AbstractPage;
 import org.openqa.selenium.By;
@@ -17,7 +17,7 @@ public class LoginOverlay extends AbstractPage {
     }
 
     public void inputUsername(String username){
-        $(username).sendKeys(username);
+        inputText(usernameField, username);
     }
 
 }
