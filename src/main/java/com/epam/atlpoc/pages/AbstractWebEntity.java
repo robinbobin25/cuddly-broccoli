@@ -17,7 +17,7 @@ public class AbstractWebEntity {
     }
 
     public void clickElement(By elementPath) {
-        driver.findElement(elementPath).click();
+        $(elementPath).click();
     }
 
     public void inputText(By elementPath, String text) {
