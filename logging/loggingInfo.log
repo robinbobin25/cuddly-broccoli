@@ -696,3 +696,9 @@
 2015-10-15 18:45:14 INFO  DriverEventHandler:20 - Navigated to https://books.sonatype.com/mcookbook/reference/ch07s06.html
 2015-10-15 18:45:15 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
 2015-10-15 18:45:16 INFO  DriverEventHandler:20 - Navigated to https://github.com/
+2015-10-16 11:13:40 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (0dbe0e4f-2703-4167-9816-aa0547e29547) was created
+2015-10-16 11:13:42 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
+2015-10-16 11:13:45 INFO  DriverEventHandler:20 - Navigated to https://github.com/
+2015-10-16 11:13:49 INFO  WebDriver:29 - New FirefoxDriver: firefox on WINDOWS (1563eb3f-c598-49f8-9890-3b9c49179bdc) was created
+2015-10-16 11:13:52 INFO  DriverEventHandler:20 - Navigated to https://www.google.com.ua/
+2015-10-16 11:13:54 INFO  DriverEventHandler:20 - Navigated to https://github.com/
