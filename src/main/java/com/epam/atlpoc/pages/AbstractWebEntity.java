@@ -17,6 +17,7 @@ public class AbstractWebEntity {
     }
 
     public void clickElement(By elementPath) {
+        // waiter+
         $(elementPath).click();
     }
 
