@@ -22,14 +22,24 @@ public class DriverEventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement webElement, WebDriver webDriver) {
-        LOGGER.info("WebDriver will find element by - "
-                + by.toString());
+        if (webElement == null) {
+            LOGGER.info("WebDriver will find element by - "
+                    + by.toString());
+        } else {
+            LOGGER.info("WebDriver will find element by - "
+                    + by.toString() + " in " + webElement);
+        }
     }
 
     @Override
     public void afterFindBy(By by, WebElement webElement, WebDriver webDriver) {
-        LOGGER.info("WebDriver found element by - "
-                + by.toString());
+        if (webElement == null) {
+            LOGGER.info("WebDriver found element by - "
+                    + by.toString());
+        } else {
+            LOGGER.info("WebDriver found element by - "
+                    + by.toString() + " in " + webElement);
+        }
     }
 
     @Override
@@ -99,7 +109,7 @@ public class DriverEventHandler implements WebDriverEventListener {
             description += " name: " + element.getAttribute("name");
         }
 
-        description += " ('" + element.getText() + "')";
+        description += "('" + element.getText() + "')";
 
         return description;
     }

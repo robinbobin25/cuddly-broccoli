@@ -1,9 +1,11 @@
 package com.epam.atlpoc.pages;
 
+import com.epam.atlpoc.utils.waiters.Waits;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -17,11 +19,12 @@ public class AbstractWebEntity {
     }
 
     public void clickElement(By elementPath) {
-        // waiter+
+        Waits.waitForElementClickable(driver, elementPath);
         $(elementPath).click();
     }
 
     public void inputText(By elementPath, String text) {
+        Waits.waitForVisibilityOf(driver, elementPath);
         WebElement element = $(elementPath);
         element.clear();
         element.sendKeys(text);

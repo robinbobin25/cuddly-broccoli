@@ -10,10 +10,6 @@ public class HomePage extends AbstractPage {
         super(driver);
     }
 
-//    public HomePage go() {
-//        this.open("homePage", withParameters(Environment.get().getStoreBaseUrl()));
-//        return this;
-//    }
 
     public HomePage openPage(){
         /* ! temporary url sending ! */
