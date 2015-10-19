@@ -20,10 +20,6 @@ public class TestLogin extends BaseStepDefs {
     @Before("@Suite") // or after every @story?
     public void setUpDriver() {
         setDriver();
-    }
-
-    @Before("@Story")
-    public void setUp() {
         homePage = new HomePage(getDriver());
         header = new Header(getDriver());
     }
@@ -34,7 +30,8 @@ public class TestLogin extends BaseStepDefs {
         System.out.println(1);
         homePage.openPage();
         Thread.sleep(3000);
-        header.clickOnLoginButton(); // can't see login button because header and homepage are separately intialized
+        header.clickOnLoginButton();
+        Thread.sleep(10000);// can't see login button because header and homepage are separately intialized
     }
 
     @When("Login overlay is displayed")

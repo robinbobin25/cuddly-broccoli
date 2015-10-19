@@ -28,7 +28,7 @@ public class DriverEventHandler implements WebDriverEventListener {
 
     @Override
     public void afterFindBy(By by, WebElement webElement, WebDriver webDriver) {
-        LOGGER.info("WebDriver will click on element - "
+        LOGGER.info("WebDriver found element - "
                 + elementDescription(webElement));
     }
 
@@ -92,15 +92,15 @@ public class DriverEventHandler implements WebDriverEventListener {
     }
 
     private String elementDescription(WebElement element) {
-        String description = "tag:" + element.getTagName();
-        if (element.getAttribute("id") != null) {
-            description += " id: " + element.getAttribute("id");
-        } else if (element.getAttribute("name") != null) {
-            description += " name: " + element.getAttribute("name");
-        }
+//        String description = "tag:" + element.getTagName();
+//        if (element.getAttribute("id") != null) {
+//            description += " id: " + element.getAttribute("id");
+//        } else if (element.getAttribute("name") != null) {
+//            description += " name: " + element.getAttribute("name");
+//        }
+//
+//        description += " ('" + element.getText() + "')";
 
-        description += " ('" + element.getText() + "')";
-
-        return description;
+        return "";
     }
 }

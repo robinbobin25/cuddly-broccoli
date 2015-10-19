@@ -1,7 +1,6 @@
 package com.epam.atlpoc.pages.store.fragments;
 
 import com.epam.atlpoc.pages.AbstractPage;
-import com.epam.atlpoc.utils.waiters.Waits;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
