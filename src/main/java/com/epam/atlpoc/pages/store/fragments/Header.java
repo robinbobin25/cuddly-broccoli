@@ -12,7 +12,7 @@ import static com.epam.atlpoc.utils.waiters.Waits.waitForElementClickable;
  */
 public class Header extends AbstractPage {
 
-    private By loginButton = By.className(".header-btn-login div");
+    private By loginButton = By.cssSelector(".header-btn-login div");
 
     public Header(WebDriver driver) {
         super(driver);
