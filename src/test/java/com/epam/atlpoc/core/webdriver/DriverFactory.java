@@ -28,7 +28,6 @@ public class DriverFactory {
                 driver = new FirefoxDriver();
                 break;
         }
-        LOGGER.info("New " + driver.toString() + " was created");
         return optimizeDriver(wrapDriver(driver));
     }
 
